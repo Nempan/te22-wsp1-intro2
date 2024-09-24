@@ -53,3 +53,10 @@ app.get('/om', (request, response) => {
         title: 'Nunjucks OM'
     })
 })
+
+## Route
+
+Vi gjorde index.js som route där den sparar alla routes til dom olika sidorn så det skulle slippa vara i server.js
+
+Vi tog även information med get från search.js i listan med namn så att när man söker på namnen så hittar den. 
+Vi gjorde även en toLowerCase så att allt omvandlas till lower case när man söker.
