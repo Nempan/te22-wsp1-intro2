@@ -1,0 +1,19 @@
+{% extends "layout.njk" %}
+{% block content %}
+
+<main>
+    <h1>Miniräknare</h1>
+    <form action="/calc/add" method="get">
+        <input type="number" name="num1">
+        <input type="number" name="num2">
+        <select name="method">
+            <option value="add"> Addition </option>
+        </select>
+
+        <button type="submit" value="Calcculate">Addition</button>
+       
+        </form>
+      
+</main>
+
+{% endblock %}

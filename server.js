@@ -3,6 +3,7 @@ import nunjucks from "nunjucks"
 import morgan from "morgan"
 import indexRouter from './routes/index.js'
 import searchRouter from './routes/search.js'
+import calcRouter from './routes/calc.js'
 
 const app = express()
 
@@ -16,6 +17,7 @@ app.use(express.static('public'))
 app.use(morgan('dev'))
 app.use("/search", searchRouter)
 app.use("/", indexRouter)
+app.use("/calc", calcRouter)
 
 app.use(express.static ('public'))
 
